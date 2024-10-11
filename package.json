@@ -3,6 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "author": {
+    "name": "prb",
+    "email": "2295214749@qq.com"
+  },
   "scripts": {
     "commit": "git add . && czg",
     "bootstrap": "pnpm install",

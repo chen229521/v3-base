@@ -43,6 +43,8 @@ export function isTime(val: unknown): val is Date {
   return isType(val, 'Date');
 }
 
+export const isServer = typeof window === 'undefined';
+
 // 判断数据是否为Null类型，是返回true
 export function hasNull(val: unknown): val is null {
   return val === null;

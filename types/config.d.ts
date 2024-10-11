@@ -22,3 +22,16 @@ export interface ProjectConfig {
   // 切换接口时是否取消已发送但未响应的http请求
   removeAllHttpPending: boolean;
 }
+
+export interface GlobConfig {
+  // 站点名称
+  title: string;
+  // 服务接口url
+  apiUrl: string;
+  // 上传url
+  uploadUrl?: string;
+  // 服务接口url前缀
+  urlPrefix?: string;
+  // 项目简称
+  shortName: string;
+}

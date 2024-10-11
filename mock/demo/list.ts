@@ -1,5 +1,5 @@
 // mock/demo/list.ts
-import { resultSuccess, resultError, getRequestToken, requestParams, baseUrl } from '../_util';
+import { resultSuccess, requestParams, baseUrl } from '../_util';
 import { MockMethod } from 'vite-plugin-mock';
 
 const listInfo = {
@@ -46,12 +46,23 @@ export default [
     timeout: 1000,
     method: 'get',
     response: (request: requestParams) => {
-      const token = getRequestToken(request);
-      if (!token) {
-        return resultError('Invalid token!');
-      }
-
-      return resultSuccess(listInfo);
+      const res: any = {
+        ...request,
+        ...listInfo,
+      };
+      return resultSuccess(res);
+    },
+  },
+  {
+    url: `${baseUrl}/postListInfo`,
+    timeout: 1000,
+    method: 'post',
+    response: (request: requestParams) => {
+      const res: any = {
+        ...request,
+        ...listInfo,
+      };
+      return resultSuccess(res);
     },
   },
 ] as MockMethod[];

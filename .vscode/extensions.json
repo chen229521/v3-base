@@ -1,0 +1,18 @@
+// extensions.json
+{
+  "recommendations": [   // 向此工作区的用户推荐的扩展列表。扩展的标识符始终为 "${publisher}.${name}"。例如: "vscode.csharp"。
+    "christian-kohler.path-intellisense", // 文件路径名提示
+    "vscode-icons-team.vscode-icons",  // 给文件夹、文件添加上舒适的图标
+    "davidanson.vscode-markdownlint",  // markdown文档格式
+    "stylelint.vscode-stylelint",   // stylelint的vscode设置规则
+    "bradlc.vscode-tailwindcss",   // tailwindcss的提示插件
+    "dbaeumer.vscode-eslint",  // eslint的vscode设置规则
+    "esbenp.prettier-vscode",  //  prettier的格式化工具
+    "lokalise.i18n-ally",  // 国际化提示
+    "redhat.vscode-yaml",  // YAML 格式验证
+    "csstools.postcss",  // 用于将@tailwind CSS规则添加到css检查器
+    "mikestead.dotenv",  // 所有以.env开头的全都匹配//vue下的环境配置文件命名推荐
+    "eamodio.gitlens",  // 取消每行后面代码变更记录
+    "antfu.iconify",  // 图标框架
+  ]
+}

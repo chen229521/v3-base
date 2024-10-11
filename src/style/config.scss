@@ -1,0 +1,6 @@
+// config.scss
+// generateModifyVars函数使用@use引用，此处不能再次使用@use引用
+// 原因未知
+
+@import './color';
+@import './var/index';

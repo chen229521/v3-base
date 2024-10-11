@@ -1,0 +1,13 @@
+// color.scss
+html {
+  // let sider
+
+  --sider-dark-bg-color: #273352;
+}
+
+$content-bg: #f4f7f9;
+$text-color-help-dark: #909399;
+$primary-color: #13c2c2;
+
+// let -menu
+$sider-dark-bg-color: var(--sider-dark-bg-color);
